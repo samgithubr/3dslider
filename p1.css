@@ -126,7 +126,7 @@ nav
         transform-style: preserve-3d;
         animation: rotate 30s linear infinite;
         margin: auto;
-        margin-top: 12rem;
+        margin-top: 10rem;
     }
     
     .slider span
