@@ -1,0 +1,175 @@
+
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right,#572f97 ,rgb(202, 196, 196),#793399);
+
+  
+   
+}
+
+.slider
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+    margin: auto;
+    margin-top: 7rem;
+}
+
+.slider span
+{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+   
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(340px) translateY(20px) ;
+}
+
+.slider span img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+    border-radius: 50px;
+    object-fit: cover;
+    transition: 2s;
+    box-shadow: 0px 6px 5px black;
+}
+
+.slider span:hover img 
+{
+    transform: translateZ(100px) scale(1.1);
+ 
+}
+.slider:hover h1
+{
+  display: block;
+}
+.slider:hover
+{
+    animation-play-state: paused;
+}
+
+
+form
+{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    text-align: center; 
+   
+}
+form > #in
+{
+    height: 3rem;
+    width: 40%;
+    margin: 0;
+    background-color: #dea7f8;
+    color: black;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 600;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid rgb(3, 3, 3);
+}
+
+nav
+{
+   
+    text-align: center;
+
+}
+
+
+@keyframes rotate {
+    
+    0%
+    {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%
+    {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+
+}
+
+@media (max-width:600px)
+{
+
+
+nav
+{
+   
+    text-align: center;
+    margin-top: 8rem;
+    
+}
+
+    .slider
+    {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        transform-style: preserve-3d;
+        animation: rotate 30s linear infinite;
+        margin: auto;
+        margin-top: 12rem;
+    }
+    
+    .slider span
+    {
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+       
+        transform: rotateY(calc(var(--i)*45deg)) translateZ(180px) translateY(20px) ;
+    }
+    
+    .slider span img
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90%;
+        height: 90%;
+        border-radius: 10px;
+        object-fit: cover;
+        transition: 2s;
+        box-shadow: 0px 6px 5px black;
+    }
+
+    form > #in
+    {
+        height: 3rem;
+        width: 80%;
+        margin: 0;
+        background-color: #dea7f8;
+        color: black;
+        font-size: 1.5rem;
+        font-style: italic;
+        font-weight: 600;
+        text-align: center;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        border: 1px solid rgb(3, 3, 3);
+    }
+
+
+}
