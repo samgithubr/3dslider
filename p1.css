@@ -140,7 +140,7 @@ nav
         transform-origin: center;
         transform-style: preserve-3d;
        
-        transform: rotateY(calc(var(--i)*45deg)) translateZ(180px) translateY(20px) ;
+        transform: rotateY(calc(var(--i)*45deg)) translateZ(165px) translateY(20px) ;
     }
     
     .slider span img
